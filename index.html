@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSolutions - Soluções em Tecnologia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Header -->
+    <header id="home" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/images/logo.png" alt="DevSolutions Logo" height="40" class="d-inline-block align-text-top">
+                    DevSolutions
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content com padding para compensar o fixed header -->
+    <main>
+        <!-- Hero Section / Home -->
+        <section class="hero-section d-flex align-items-center text-center text-white">
+            <div class="container">
+                <h1 class="display-3 fw-bold mb-4">Transformando Ideias em Soluções Digitais</h1>
+                <p class="lead mb-5">A DevSolutions está pronta para impulsionar sua presença digital com soluções tecnológicas inovadoras.</p>
+                <a href="#servicos" class="btn btn-lg btn-light">Conheça Nossos Serviços</a>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Sobre a DevSolutions</h2>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Nossa História</h3>
+                        <p>A DevSolutions é uma startup inovadora fundada em 2021 por um grupo de desenvolvedores apaixonados por tecnologia. Nossa missão é oferecer soluções tecnológicas que transformem a maneira como empresas interagem com seus clientes no ambiente digital.</p>
+                        <p>Acreditamos que a tecnologia deve ser acessível e útil para todos os tipos de negócios, independentemente do seu tamanho.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mission-card">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">Missão e Valores</h3>
+                                <ul class="values-list">
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Inovação constante em todas as soluções</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Compromisso com a qualidade e excelência</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Transparência em todos os processos</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Foco na satisfação do cliente</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Responsabilidade social e ambiental</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Nossos Serviços</h2>
+                        <div class="divider"></div>
+                        <p class="lead">Oferecemos soluções completas em tecnologia para impulsionar seu negócio</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Serviço 1 -->
+                    <div class="col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3 class="card-title">Desenvolvimento de Software</h3>
+                                <p class="card-text">Criamos soluções personalizadas que atendem às necessidades específicas do seu negócio:</p>
+                                <ul>
+                                    <li>Desenvolvimento de aplicativos web</li>
+                                    <li>Criação de aplicativos móveis</li>
+                                    <li>Sistemas de gerenciamento empresarial</li>
+                                    <li>E-commerce e plataformas digitais</li>
+                                    <li>Integrações com APIs e serviços</li>
+                                </ul>
+                                <a href="#contato" class="btn btn-outline-primary mt-3">Solicite um orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Serviço 2 -->
+                    <div class="col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h3 class="card-title">Consultoria em Tecnologia</h3>
+                                <p class="card-text">Orientamos sua empresa a fazer as melhores escolhas tecnológicas:</p>
+                                <ul>
+                                    <li>Análise de infraestrutura tecnológica</li>
+                                    <li>Planejamento estratégico de TI</li>
+                                    <li>Otimização de processos digitais</li>
+                                    <li>Implementação de soluções em nuvem</li>
+                                    <li>Segurança da informação</li>
+                                </ul>
+                                <a href="#contato" class="btn btn-outline-primary mt-3">Agende uma consultoria</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Entre em Contato</h2>
+                        <div class="divider"></div>
+                        <p class="lead">Estamos prontos para auxiliar no seu próximo projeto</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                        <div class="card contact-card">
+                            <div class="card-body">
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Seu nome completo" required>
+                                        <div class="invalid-feedback">
+                                            Por favor, informe seu nome.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" placeholder="seu.email@exemplo.com" required>
+                                        <div class="invalid-feedback">
+                                            Por favor, informe um e-mail válido.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Descreva seu projeto ou dúvida" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Por favor, escreva uma mensagem.
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>DevSolutions</h5>
+                    <p>Transformando ideias em soluções digitais desde 2021.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#sobre" class="text-white">Sobre</a></li>
+                        <li><a href="#servicos" class="text-white">Serviços</a></li>
+                        <li><a href="#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Salvador, BA</li>
+                        <li><i class="fas fa-phone me-2"></i> (71) 9999-9999</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@devsolutions.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 DevSolutions. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Mensagem Enviada!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="src/scripts/main.js"></script>
+    <script src="src/scripts/form.js"></script>
+    <script src="src/scripts/navigation.js"></script>
+</body>
+</html>
