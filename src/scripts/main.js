@@ -1,27 +1,19 @@
-/**
- * Script principal da DevSolutions
- * Este arquivo inicializa os componentes e funcionalidades gerais do site
- */
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicialização de todos os tooltips do Bootstrap
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function(tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
     
-    // Inicialização de todos os popovers do Bootstrap
     const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     popoverTriggerList.map(function(popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl);
     });
     
-    // Habilitar scrollspy do Bootstrap para destacar itens de navegação ativos
     const scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: '#navbar',
         offset: 100
     });
     
-    // Função para animar os elementos à medida que eles aparecem na viewport
     function animateOnScroll() {
         const elements = document.querySelectorAll('.animate-on-scroll');
         
@@ -35,21 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Adicionar a classe 'animate-on-scroll' aos elementos que deseja animar
     const elementsToAnimate = document.querySelectorAll('.section-title, .card, .lead');
     elementsToAnimate.forEach(element => {
         element.classList.add('animate-on-scroll');
     });
     
-    // Executar animação no carregamento e no scroll
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Executar uma vez no carregamento
+    animateOnScroll();
     
-    // Código para garantir que o menu de navegação permaneça visível em dispositivos móveis
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
     document.documentElement.style.setProperty('--navbar-height', `${navbarHeight}px`);
     
-    // Código para mostrar ou esconder o botão "voltar ao topo"
     const backToTopButton = document.createElement('button');
     backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
     backToTopButton.classList.add('back-to-top');
@@ -75,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.body.appendChild(backToTopButton);
     
-    // Mostrar ou esconder o botão com base na posição do scroll
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
             backToTopButton.style.opacity = '1';
@@ -86,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Adicionar funcionalidade de volta ao topo
     backToTopButton.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
@@ -94,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Verificar se há hash na URL para rolagem automática
     if (window.location.hash) {
         const targetSection = document.querySelector(window.location.hash);
         if (targetSection) {

@@ -1,4 +1,3 @@
-/* Variáveis de Cores */
 :root {
     --primary: #0d6efd;
     --primary-dark: #0b5ed7;
@@ -18,13 +17,12 @@
     --gray-900: #212529;
 }
 
-/* Estilos Globais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--gray-800);
     overflow-x: hidden;
     position: relative;
-    padding-top: 76px; /* Ajuste para o fixed header */
+    padding-top: 76px;
 }
 
 a {
@@ -46,7 +44,6 @@ a {
     border-radius: 2px;
 }
 
-/* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(11, 94, 215, 0.9)), url('https://source.unsplash.com/random/1920x1080/?technology') no-repeat center center;
     background-size: cover;
@@ -55,7 +52,6 @@ a {
     position: relative;
 }
 
-/* Cards */
 .card {
     border: none;
     border-radius: 10px;
@@ -83,7 +79,6 @@ a {
     align-items: flex-start;
 }
 
-/* Serviços */
 .service-card {
     padding: 1.5rem;
     border-bottom: 4px solid transparent;
@@ -108,7 +103,6 @@ a {
     margin-bottom: 0.5rem;
 }
 
-/* Contato */
 .contact-card {
     border: none;
     border-radius: 10px;
@@ -116,7 +110,6 @@ a {
     padding: 1rem;
 }
 
-/* Botões */
 .btn {
     border-radius: 30px;
     padding: 0.75rem 1.5rem;
@@ -147,7 +140,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* Formulário */
 .form-control {
     border-radius: 8px;
     padding: 0.75rem 1rem;
@@ -159,7 +151,6 @@ a {
     border-color: var(--primary);
 }
 
-/* Footer */
 footer {
     background-color: var(--gray-900);
 }
@@ -175,7 +166,6 @@ footer a:hover {
     color: var(--white);
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .hero-section {
         height: auto;
@@ -187,13 +177,11 @@ footer a:hover {
     }
 }
 
-/* Animações */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Aplicando animações */
 .hero-section h1,
 .hero-section p,
 .hero-section .btn {
@@ -208,12 +196,10 @@ footer a:hover {
     animation-delay: 0.4s;
 }
 
-/* Efeito de scroll suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* Estilos para a barra de navegação */
 .navbar {
     padding: 1rem 0;
     transition: all 0.3s ease;
